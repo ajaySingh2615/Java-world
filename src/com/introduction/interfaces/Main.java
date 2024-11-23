@@ -1,5 +1,9 @@
 package com.introduction.interfaces;
 
+// class - class -> extends
+// class - interface -> implements
+// interface - interface -> extends
+
 interface A {
     int age = 44;
     String area = "UP";
@@ -11,6 +15,10 @@ interface A {
 
 interface X {
     void run();
+}
+
+interface Y extends X{
+
 }
 
 class B implements A, X {
