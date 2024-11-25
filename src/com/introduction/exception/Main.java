@@ -13,8 +13,11 @@ public class Main {
             System.out.println(nums[5]);
         } catch (ArithmeticException e) {
             System.out.println("Cannot divide by zero!");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array out of bounds exception");
+        } catch (Exception e) {
+            System.out.println("Something went wrong...");
         }
-        catch(ArrayIndexOutOfBoundsException )
 
         System.out.println(j);
 
