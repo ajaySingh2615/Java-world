@@ -15,6 +15,13 @@ class MyException extends Exception {
 
 public class ThrowsAndThrow {
     public static void main(String[] args) {
+
+        try {
+            Class.forName("ThrowsAndThrow");
+        } catch (Exception e) {
+            System.out.println("Not able to find the class");
+        }
+
         int i = 0;
         int j = 0;
 
